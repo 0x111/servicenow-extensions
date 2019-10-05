@@ -119,6 +119,9 @@ GlideRecordExt.prototype = {
         }
         return result;
     },
+    next: function() {
+        this.gr._next();
+    },
     // we create an increment method in case of future needs, we can differentiate between write/read/delete operations
     increment: function() {
         this.count++;
